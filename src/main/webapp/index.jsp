@@ -1,6 +1,5 @@
-<%@ page import="jakarta.servlet.http.HttpSession" %>
 <%
-    HttpSession session = request.getSession(false);
+    // 'session' is an implicit JSP variable (type HttpSession)
     if (session == null || session.getAttribute("user") == null) {
         response.sendRedirect("login.jsp");
         return;
