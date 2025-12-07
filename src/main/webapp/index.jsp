@@ -15,6 +15,8 @@
 <h2>Welcome, <%= session.getAttribute("user") %>!</h2>
 <p>You are now logged in.</p>
 
+<p><a href="shoes.jsp">Go to Shoe Order Page</a></p>
+
 <a href="logout">Logout</a>
 
 </body>
